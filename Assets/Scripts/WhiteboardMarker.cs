@@ -21,7 +21,7 @@ public class WhiteboardMarker : MonoBehaviour
 
     void Start()
     {
-        _renderer = GetComponent<Renderer>();
+        _renderer = _tip.GetComponent<Renderer>();
         _colors = Enumerable.Repeat(_renderer.material.color, _penSize * _penSize).ToArray();
         _tipHeight = _tip.localScale.y;
     }
