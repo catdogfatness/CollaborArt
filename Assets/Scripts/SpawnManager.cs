@@ -5,12 +5,18 @@ using Photon.Pun;
 
 public class SpawnManager : MonoBehaviour
 {
+
+    [SerializeField]  GameObject GenericVRPlayerPrefab;
+    [SerializeField]  GameObject OriginalXROrigin;
+
+    public Vector3 spawnPosition;
     // Start is called before the first frame update
     void Start()
     {
         if (PhotonNetwork.IsConnectedAndReady)
         {
-            PhotonNetwork.Instantiate("Player", new Vector3(0, 0, 0), Quaternion.identity);
+            OriginalXROrigin.SetActive(false);
+            PhotonNetwork.Instantiate(GenericVRPlayerPrefab.name, spawnPosition, Quaternion.identity);
         }
     }
 

@@ -1817,6 +1817,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56479bea4cb621e44a13053acf2763f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GenericVRPlayerPrefab: {fileID: 7301135835613165357, guid: 99bf4dd92b6cc984fa54c8e8024d6627,
+    type: 3}
+  OriginalXROrigin: {fileID: 545890181}
+  spawnPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &1398136026
 PrefabInstance:
   m_ObjectHideFlags: 0
