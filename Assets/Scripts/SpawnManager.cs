@@ -13,11 +13,7 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PhotonNetwork.IsConnectedAndReady)
-        {
-            OriginalXROrigin.SetActive(false);
-            PhotonNetwork.Instantiate(GenericVRPlayerPrefab.name, spawnPosition, Quaternion.identity);
-        }
+       
     }
 
     // Update is called once per frame
@@ -25,4 +21,22 @@ public class SpawnManager : MonoBehaviour
     {
         
     }
+    
+    public void Spawn()
+    {
+        Debug.Log("Attempting to spawn");
+        if (PhotonNetwork.IsConnectedAndReady)
+        {
+            Debug.Log("Spawning...");
+            OriginalXROrigin.SetActive(false);
+            PhotonNetwork.Instantiate(GenericVRPlayerPrefab.name, spawnPosition, Quaternion.identity);
+            Debug.Log("Spawned");
+
+        }
+        else
+        {
+            Debug.Log("Spawn failed. Photon network was not connecteed and ready.");
+        }
+    }
+    
 }

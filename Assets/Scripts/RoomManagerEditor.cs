@@ -15,7 +15,6 @@ public class RoomManagerEditor : Editor
         RoomManager roomManager = (RoomManager)target;
         if (GUILayout.Button("Create Room"))
         {
-            Debug.Log("Joining room...");
             roomManager.JoinRandomRoom();
         }
     }

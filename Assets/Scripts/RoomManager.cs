@@ -7,6 +7,7 @@ using Photon.Realtime;
 
 public class RoomManager : MonoBehaviourPunCallbacks
 {
+    [SerializeField] GameObject SpawnManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
     #region UI Callback Methods
     public void JoinRandomRoom()
     {
+        Debug.Log("Joining room...");
         PhotonNetwork.JoinRandomRoom();
     }
     #endregion
@@ -42,6 +44,8 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         Debug.Log("The local player has joined " + PhotonNetwork.CurrentRoom.Name);
+        SpawnManager.SetActive(true);
+        SpawnManager.GetComponent<SpawnManager>().Spawn();
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
