@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+
 
 
 [CustomEditor(typeof(RoomManager))]
@@ -15,9 +17,8 @@ public class RoomManagerEditor : Editor
         RoomManager roomManager = (RoomManager)target;
         if (GUILayout.Button("Create Room"))
         {
-            Debug.Log("Joining room...");
             roomManager.JoinRandomRoom();
         }
     }
 }
-
+#endif
