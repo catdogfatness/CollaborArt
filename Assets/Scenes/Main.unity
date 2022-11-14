@@ -741,6 +741,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 010d76cf3e75a5d41bc73379ace89064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &267213577 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5987472509961078838, guid: 203e3bd0195662e49b3869017525fcef,
+    type: 3}
+  m_PrefabInstance: {fileID: 5987472510134881073}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &324759524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,6 +1802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1032800586}
+  - component: {fileID: 1032800587}
   m_Layer: 0
   m_Name: Eraser
   m_TagString: Untagged
@@ -1821,6 +1828,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 44.194, y: 86.729, z: 105.338}
+--- !u!114 &1032800587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032800585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a58fb495b0854b543a3738f0b85af648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tip: {fileID: 267213577}
+  _penSize: 5
 --- !u!1001 &1047053447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2903,6 +2924,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marker
       objectReference: {fileID: 0}
+    - target: {fileID: 5987472510544888590, guid: 203e3bd0195662e49b3869017525fcef,
+        type: 3}
+      propertyPath: _tip
+      value: 
+      objectReference: {fileID: 267213577}
     - target: {fileID: 5987472510544888591, guid: 203e3bd0195662e49b3869017525fcef,
         type: 3}
       propertyPath: m_RootOrder
