@@ -827,16 +827,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 933643048}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: QuitGame
-        m_Mode: 1
+      - m_Target: {fileID: 870279740}
+        m_TargetAssemblyTypeName: PenController, Assembly-CSharp
+        m_MethodName: SwitchPen
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Blue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &243650169
@@ -960,10 +960,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5987472509961078840, guid: 203e3bd0195662e49b3869017525fcef,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a66f76da330b52646927ab13bbef1de7, type: 2}
     - target: {fileID: 5987472510544888588, guid: 203e3bd0195662e49b3869017525fcef,
         type: 3}
       propertyPath: m_Name
-      value: Marker (4)
+      value: Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987472510544888588, guid: 203e3bd0195662e49b3869017525fcef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5987472510544888591, guid: 203e3bd0195662e49b3869017525fcef,
         type: 3}
@@ -1170,7 +1180,12 @@ PrefabInstance:
     - target: {fileID: 5987472510544888588, guid: 203e3bd0195662e49b3869017525fcef,
         type: 3}
       propertyPath: m_Name
-      value: Marker (2)
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987472510544888588, guid: 203e3bd0195662e49b3869017525fcef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5987472510544888591, guid: 203e3bd0195662e49b3869017525fcef,
         type: 3}
@@ -1239,6 +1254,12 @@ PrefabInstance:
       objectReference: {fileID: 1281182104}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 203e3bd0195662e49b3869017525fcef, type: 3}
+--- !u!1 &488304392 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5987472510544888588, guid: 203e3bd0195662e49b3869017525fcef,
+    type: 3}
+  m_PrefabInstance: {fileID: 488304391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &488801667
 GameObject:
   m_ObjectHideFlags: 0
@@ -2113,16 +2134,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: cdd01267fb579b0459a75fd82751c84c, type: 3}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 870279740}
+        m_TargetAssemblyTypeName: PenController, Assembly-CSharp
+        m_MethodName: SwitchPen
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Purple
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &597198673
@@ -2268,10 +2289,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5987472509961078840, guid: 203e3bd0195662e49b3869017525fcef,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 786f73b236de2d641893c43e411a5beb, type: 2}
     - target: {fileID: 5987472510544888588, guid: 203e3bd0195662e49b3869017525fcef,
         type: 3}
       propertyPath: m_Name
       value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987472510544888588, guid: 203e3bd0195662e49b3869017525fcef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5987472510544888591, guid: 203e3bd0195662e49b3869017525fcef,
         type: 3}
@@ -2340,6 +2371,12 @@ PrefabInstance:
       objectReference: {fileID: 1281182104}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 203e3bd0195662e49b3869017525fcef, type: 3}
+--- !u!1 &616215461 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5987472510544888588, guid: 203e3bd0195662e49b3869017525fcef,
+    type: 3}
+  m_PrefabInstance: {fileID: 616215460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2655,16 +2692,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 933643048}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: QuitGame
-        m_Mode: 1
+      - m_Target: {fileID: 870279740}
+        m_TargetAssemblyTypeName: PenController, Assembly-CSharp
+        m_MethodName: SwitchPen
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Red
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &730735903
@@ -2718,6 +2755,7 @@ GameObject:
   - component: {fileID: 870279737}
   - component: {fileID: 870279736}
   - component: {fileID: 870279735}
+  - component: {fileID: 870279740}
   m_Layer: 5
   m_Name: Colors Menu
   m_TagString: Untagged
@@ -2827,6 +2865,23 @@ RectTransform:
   m_AnchoredPosition: {x: -2.42, y: 0.13}
   m_SizeDelta: {x: 140, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &870279740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870279734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd01267fb579b0459a75fd82751c84c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  penLists:
+  - {fileID: 616215461}
+  - {fileID: 488304392}
+  - {fileID: 893398154}
+  - {fileID: 1177548487}
 --- !u!1001 &893398153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2834,10 +2889,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5987472509961078839, guid: 203e3bd0195662e49b3869017525fcef,
+        type: 3}
+      propertyPath: m_Name
+      value: Tip
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987472509961078839, guid: 203e3bd0195662e49b3869017525fcef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987472509961078840, guid: 203e3bd0195662e49b3869017525fcef,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a9c0584d9cf1cb24ba5e5c40f1b895cd, type: 2}
     - target: {fileID: 5987472510544888588, guid: 203e3bd0195662e49b3869017525fcef,
         type: 3}
       propertyPath: m_Name
-      value: Marker (3)
+      value: Eraser
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987472510544888588, guid: 203e3bd0195662e49b3869017525fcef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5987472510544888591, guid: 203e3bd0195662e49b3869017525fcef,
         type: 3}
@@ -2906,6 +2981,12 @@ PrefabInstance:
       objectReference: {fileID: 1281182104}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 203e3bd0195662e49b3869017525fcef, type: 3}
+--- !u!1 &893398154 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5987472510544888588, guid: 203e3bd0195662e49b3869017525fcef,
+    type: 3}
+  m_PrefabInstance: {fileID: 893398153}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &927642329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3290,10 +3371,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5987472509961078840, guid: 203e3bd0195662e49b3869017525fcef,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0fbfb79cd7d76fe47b061b54dea790de, type: 2}
     - target: {fileID: 5987472510544888588, guid: 203e3bd0195662e49b3869017525fcef,
         type: 3}
       propertyPath: m_Name
-      value: Marker (5)
+      value: Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987472510544888588, guid: 203e3bd0195662e49b3869017525fcef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5987472510544888591, guid: 203e3bd0195662e49b3869017525fcef,
         type: 3}
@@ -3362,6 +3453,12 @@ PrefabInstance:
       objectReference: {fileID: 1281182104}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 203e3bd0195662e49b3869017525fcef, type: 3}
+--- !u!1 &1177548487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5987472510544888588, guid: 203e3bd0195662e49b3869017525fcef,
+    type: 3}
+  m_PrefabInstance: {fileID: 1177548486}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1178802812
 GameObject:
   m_ObjectHideFlags: 0
@@ -3446,16 +3543,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 933643048}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: QuitGame
-        m_Mode: 1
+      - m_Target: {fileID: 870279740}
+        m_TargetAssemblyTypeName: PenController, Assembly-CSharp
+        m_MethodName: SwitchPen
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Green
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1178802815
@@ -4526,16 +4623,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 933643048}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: QuitGame
-        m_Mode: 1
+      - m_Target: {fileID: 870279740}
+        m_TargetAssemblyTypeName: PenController, Assembly-CSharp
+        m_MethodName: SwitchPen
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Eraser
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1962784918
