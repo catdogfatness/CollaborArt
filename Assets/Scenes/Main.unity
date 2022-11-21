@@ -1540,14 +1540,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 1281182104}
   m_Colliders:
-  - {fileID: 599916907}
+  - {fileID: 599916902}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 64
   m_SelectMode: 1
-  m_CustomReticle: {fileID: 3177232254315139758, guid: a3fde713df4d99042a0403c4be9eea32,
+  m_CustomReticle: {fileID: 3449784919008568370, guid: fad94b617f0540568dbf4c9c4011248c,
     type: 3}
   m_FirstHoverEntered:
     m_PersistentCalls:
