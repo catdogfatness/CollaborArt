@@ -19,7 +19,7 @@ public class NetworkedGrabbing : MonoBehaviourPunCallbacks, IPunOwnershipCallbac
 
     void Start()
     {
-        rb = GetComponent<m_photonView>();
+        rb = GetComponent<Rigidbody>();
         
     }
 
