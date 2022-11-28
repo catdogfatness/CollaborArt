@@ -638,10 +638,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8621197467386806107}
   - {fileID: 5581667553474535137}
   m_Father: {fileID: 7256735570033075873}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4457944552586457901
 MonoBehaviour:
@@ -797,7 +796,7 @@ GameObject:
   - component: {fileID: 8761463982341637925}
   - component: {fileID: 8131217225955285699}
   - component: {fileID: 2741039242814732320}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -894,7 +893,7 @@ GameObject:
   - component: {fileID: 613179863075601758}
   - component: {fileID: 8335464476377821493}
   - component: {fileID: 3162908117225624003}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1011,7 +1010,7 @@ Transform:
   - {fileID: 6179495008947032577}
   - {fileID: 6896989594585141420}
   m_Father: {fileID: 3882023749115182625}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6334447989673700585
 GameObject:
@@ -1045,7 +1044,7 @@ Transform:
   - {fileID: 5750221709281829523}
   - {fileID: 8535678785398385460}
   - {fileID: 5693571106968469128}
-  m_Father: {fileID: 3882023749115182625}
+  m_Father: {fileID: 7256735570033075873}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7222235413061685200
@@ -1057,7 +1056,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5750221709281829523}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1113,6 +1112,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8621197467386806107}
   - {fileID: 3882023749115182625}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1201,6 +1201,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocalXRRigGameobject: {fileID: 3456428591663919165}
+  AvatarHead: {fileID: 7530118214940544394}
+  AvatarBody: {fileID: 7222235413061685200}
 --- !u!1 &7402259852735379587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1840,7 +1842,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1960,7 +1962,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8077595348183915528}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}

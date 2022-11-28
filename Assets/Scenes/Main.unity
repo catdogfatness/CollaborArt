@@ -2042,7 +2042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &545890182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2662,80 +2662,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708036435}
   m_CullTransparentMesh: 1
---- !u!1001 &782628375
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7256735570033075873, guid: 99bf4dd92b6cc984fa54c8e8024d6627,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 7256735570033075873, guid: 99bf4dd92b6cc984fa54c8e8024d6627,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7256735570033075873, guid: 99bf4dd92b6cc984fa54c8e8024d6627,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7256735570033075873, guid: 99bf4dd92b6cc984fa54c8e8024d6627,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7256735570033075873, guid: 99bf4dd92b6cc984fa54c8e8024d6627,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7256735570033075873, guid: 99bf4dd92b6cc984fa54c8e8024d6627,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7256735570033075873, guid: 99bf4dd92b6cc984fa54c8e8024d6627,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7256735570033075873, guid: 99bf4dd92b6cc984fa54c8e8024d6627,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7256735570033075873, guid: 99bf4dd92b6cc984fa54c8e8024d6627,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7256735570033075873, guid: 99bf4dd92b6cc984fa54c8e8024d6627,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7256735570033075873, guid: 99bf4dd92b6cc984fa54c8e8024d6627,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7301135835613165357, guid: 99bf4dd92b6cc984fa54c8e8024d6627,
-        type: 3}
-      propertyPath: m_Name
-      value: Generic VR Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7741169837354447477, guid: 99bf4dd92b6cc984fa54c8e8024d6627,
-        type: 3}
-      propertyPath: sceneViewId
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 99bf4dd92b6cc984fa54c8e8024d6627, type: 3}
 --- !u!1 &870279734
 GameObject:
   m_ObjectHideFlags: 0

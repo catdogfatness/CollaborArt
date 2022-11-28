@@ -7,10 +7,9 @@ using Photon.Pun;
 public class PlayerNetworkSetup : MonoBehaviourPunCallbacks
 {
     public GameObject LocalXRRigGameobject;
+    public GameObject AvatarHead;
+    public GameObject AvatarBody;
 
-   // public Transform leftHand;
-   // public Transform rightHand;
-   // public Transform body;
     private new PhotonView photonView;
 
     // Start is called before the first frame update
@@ -22,11 +21,24 @@ public class PlayerNetworkSetup : MonoBehaviourPunCallbacks
         {
             //The player is local
             LocalXRRigGameobject.SetActive(true);
+            SetLayerRecursively(AvatarBody, 7);
+            SetLayerRecursively(AvatarHead, 6);
         }
         else
         {
             //The player is remote
             LocalXRRigGameobject.SetActive(false);
+            SetLayerRecursively(AvatarBody, 0);
+            SetLayerRecursively(AvatarHead, 0);
+        }
+    }
+
+    void SetLayerRecursively(GameObject go, int layerNumber)
+    {
+        if (go == null) return;
+        foreach (Transform trans in go.GetComponentsInChildren<Transform>(true))
+        {
+            trans.gameObject.layer = layerNumber;
         }
     }
 
