@@ -8,9 +8,9 @@ public class PlayerNetworkSetup : MonoBehaviourPunCallbacks
 {
     public GameObject LocalXRRigGameobject;
 
-    public Transform leftHand;
-    public Transform rightHand;
-    public Transform body;
+   // public Transform leftHand;
+   // public Transform rightHand;
+   // public Transform body;
     private new PhotonView photonView;
 
     // Start is called before the first frame update
@@ -33,12 +33,12 @@ public class PlayerNetworkSetup : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        if(photonView.IsMine)
+       /* if(photonView.IsMine)
         {
             MapPosition(body, XRNode.Head);
             MapPosition(leftHand, XRNode.LeftHand);
             MapPosition(rightHand, XRNode.RightHand);
-        }
+        }*/
         
     }
 
@@ -49,5 +49,5 @@ public class PlayerNetworkSetup : MonoBehaviourPunCallbacks
 
         target.position = position;
         target.rotation = rotation;
-    }
+    } 
 }
