@@ -9,11 +9,16 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - LocalAvatarBody
+  - 
   - Water
   - UI
+<<<<<<< HEAD
   - InHand
   - 
+=======
+  - LocalAvatarHead
+  - LocalAvatarBody
+>>>>>>> 0f03b8312f7be1d01acfdbb818feaf17544b34bb
   - 
   - 
   - 

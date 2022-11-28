@@ -7,10 +7,9 @@ using Photon.Pun;
 public class PlayerNetworkSetup : MonoBehaviourPunCallbacks
 {
     public GameObject LocalXRRigGameobject;
+    public GameObject AvatarHead;
+    public GameObject AvatarBody;
 
-    public Transform leftHand;
-    public Transform rightHand;
-    public Transform body;
     private new PhotonView photonView;
 
     // Start is called before the first frame update
@@ -22,32 +21,25 @@ public class PlayerNetworkSetup : MonoBehaviourPunCallbacks
         {
             //The player is local
             LocalXRRigGameobject.SetActive(true);
+            SetLayerRecursively(AvatarBody, 7);
+            SetLayerRecursively(AvatarHead, 6);
         }
         else
         {
             //The player is remote
             LocalXRRigGameobject.SetActive(false);
+            SetLayerRecursively(AvatarBody, 0);
+            SetLayerRecursively(AvatarHead, 0);
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    void SetLayerRecursively(GameObject go, int layerNumber)
     {
-        if(photonView.IsMine)
+        if (go == null) return;
+        foreach (Transform trans in go.GetComponentsInChildren<Transform>(true))
         {
-            MapPosition(body, XRNode.Head);
-            MapPosition(leftHand, XRNode.LeftHand);
-            MapPosition(rightHand, XRNode.RightHand);
+            trans.gameObject.layer = layerNumber;
         }
-        
     }
 
-    void MapPosition(Transform target, XRNode node)
-    {
-        InputDevices.GetDeviceAtXRNode(node).TryGetFeatureValue(CommonUsages.devicePosition, out Vector3 position);
-        InputDevices.GetDeviceAtXRNode(node).TryGetFeatureValue(CommonUsages.deviceRotation, out Quaternion rotation);
-
-        target.position = position;
-        target.rotation = rotation;
-    }
 }
