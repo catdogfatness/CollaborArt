@@ -635,6 +635,8 @@ GameObject:
   - component: {fileID: 5015397501528238352}
   - component: {fileID: 2779012376213918252}
   - component: {fileID: 4491513144052756358}
+  - component: {fileID: 6911338714172444987}
+  - component: {fileID: 9097263461872425353}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -673,7 +675,7 @@ MonoBehaviour:
   m_Camera: {fileID: 7938899074564975056}
   m_OriginBaseGameObject: {fileID: 3456428591663919165}
   m_CameraFloorOffsetObject: {fileID: 5873624553569226016}
-  m_RequestedTrackingOriginMode: 0
+  m_RequestedTrackingOriginMode: 2
   m_CameraYOffset: 1.1176
 --- !u!114 &5015397501528238352
 MonoBehaviour:
@@ -722,7 +724,7 @@ MonoBehaviour:
   m_EnableTurnAround: 1
   m_DelayTime: 0
   m_LeftHandSnapTurnAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Left Hand Snap Turn
       m_Type: 0
@@ -735,7 +737,7 @@ MonoBehaviour:
     m_Reference: {fileID: -7374733323251553461, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_RightHandSnapTurnAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Right Hand Snap Turn
       m_Type: 0
@@ -747,6 +749,73 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -8525429354371678379, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+--- !u!114 &6911338714172444987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3456428591663919165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 2779012376213918252}
+  m_MoveSpeed: 1
+  m_EnableStrafe: 1
+  m_EnableFly: 0
+  m_UseGravity: 1
+  m_GravityApplicationMode: 0
+  m_ForwardSource: {fileID: 0}
+  m_LeftHandMoveAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Hand Move
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 75f1b245-c357-48c8-9acb-8967bec9dda2
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  m_RightHandMoveAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Right Hand Move
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 6bf6c732-e011-46b1-acc5-b649a4ec5f10
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+--- !u!114 &9097263461872425353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3456428591663919165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9bdb857cad25934fbe7a04403698158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainAvatarTransform: {fileID: 8621197467386806107}
+  AvatarHead: {fileID: 8077595348183915528}
+  AvatarBody: {fileID: 5750221709281829523}
+  AvatarHand_Left: {fileID: 5693571106968469128}
+  AvatarHand_Right: {fileID: 8535678785398385460}
+  XRHead: {fileID: 8832582781877428699}
+  XRHand_Left: {fileID: 6179495008947032577}
+  XRHand_Right: {fileID: 6896989594585141420}
+  headPositionOffset: {x: 0, y: -0.9, z: 0}
+  handRotationOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &3713158723721498586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,7 +1202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abeeec9eb9338624c8f68ff3ca055bfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalXRRigGameobject: {fileID: 0}
+  LocalXRRigGameobject: {fileID: 3456428591663919165}
   leftHand: {fileID: 5693571106968469128}
   rightHand: {fileID: 8535678785398385460}
   body: {fileID: 8077595348183915528}
@@ -2101,6 +2170,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XRControllerLeft
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e48d18018a0ba46c283d9fd9c227e578,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e48d18018a0ba46c283d9fd9c227e578, type: 3}
 --- !u!4 &2256999383774417198 stripped
@@ -2175,6 +2249,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: XRControllerRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2d10b9b89f2474de9800b152c3d00004,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d10b9b89f2474de9800b152c3d00004, type: 3}
