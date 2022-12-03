@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Photon.Pun;
 
 public class WhiteboardMarker : MonoBehaviour
 {
     [SerializeField] private Transform _tip;
     [SerializeField] private int _penSize = 5;
+
+    
 
     private Renderer _renderer;
     private Color[] _colors;
@@ -17,10 +20,13 @@ public class WhiteboardMarker : MonoBehaviour
     private Vector2 _touchPos, _lastTouchPos;
     private bool _touchedLastFrame;
     private Quaternion _lastTouchRot;
+    private PhotonView markerPhotonView;
+    
 
 
     void Start()
     {
+        markerPhotonView = GetComponent<PhotonView>();
         _renderer = _tip.GetComponent<Renderer>();
         _colors = Enumerable.Repeat(_renderer.material.color, _penSize * _penSize).ToArray();
         _tipHeight = _tip.localScale.y;
@@ -28,13 +34,29 @@ public class WhiteboardMarker : MonoBehaviour
     
     void Update()
     {
-        Draw();
+        //Draw();
+        if(PhotonNetwork.IsConnected)
+        {
+            if(markerPhotonView.IsMine)
+            {
+           markerPhotonView.RPC("Draw", RpcTarget.AllBuffered, _whiteboard);
+             }
+        }
+        else
+        {
+            Draw(_whiteboard);
+        }
+        
+        
     }
 
-    private void Draw()
+    [PunRPC]
+    void Draw(Whiteboard _whiteboard)
     {
+     Debug.Log("called");
         if(Physics.Raycast(_tip.position, transform.up, out _touch, _tipHeight))
         {
+       
             if(_touch.transform.CompareTag("Whiteboard"))
             {
                 if (_whiteboard == null)
