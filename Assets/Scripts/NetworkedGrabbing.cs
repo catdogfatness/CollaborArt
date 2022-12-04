@@ -29,7 +29,6 @@ public class NetworkedGrabbing : MonoBehaviourPunCallbacks, IPunOwnershipCallbac
         if(isBeingHeld)
         {
             rb.isKinematic = true;
-            gameObject.layer = 6;
         }
         else
         {
