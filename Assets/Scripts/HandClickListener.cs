@@ -28,6 +28,7 @@ public class HandClickListener : MonoBehaviour
             leftHand_device=device;
         }
     }
+    private bool waitReset = false;
     // Update is called once per frame
     void Update()
     {
@@ -63,9 +64,14 @@ public class HandClickListener : MonoBehaviour
                 break;
         }
 
-        if (istrigger)
+        if (istrigger && !waitReset)
         {
             triggerEvent.Invoke();
+            waitReset = true;
+        }
+        if(!istrigger && waitReset)
+        {
+            waitReset = false;
         }
 }
 }
