@@ -2021,7 +2021,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  buttonType: 1
+  buttonType: 2
 --- !u!114 &545890187
 MonoBehaviour:
   m_ObjectHideFlags: 0
